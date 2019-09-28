@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+      <button id ="submit">ClickMe</button>
+      <div id ="myDiv" class="table-responsive"></div>
+  </div>
+    
+    <div class ="container">
+        <em> Forklaring til opgaven: <br>
+            Til at lave opgaven har jeg anvendt Ajax. Ajax er et sæt af webudviklings teknologier, som anvender mange webteknologier på client siden <br>
+            for, at skabe en asynkron webapplikation. Dette betyder at webapplikationen kan sende og modtage data fra en server uden, <br>
+            at interfere med selve displayet og det igangværende på den eksisterende side.<br>
+            Vi adstiller derfor data udvekningslaget fra præsentationslaget og kan nu ændrer contentet dynamisk uden behov for, at reloade hele siden.<br>
+            <br>
+            Som tidligere nævnt er anvender Ajax mange webteknologier, heraf:<br>
+            # HTML og CSS til præsentation<br>
+            # DOM (Document Object Model) for dynamisk visning og interaktion med data<br>
+            # JSON (JavaScript Object Notation) til udveksning af data<br>
+            # fetch() til asynkron kommunikation <br>
+            # JavaScript til at sammensætte ovenstående teknologier<br><br>
+            
+            Jeg har derfor lavet denne opgave ved, at ved at oprette en div og button ved brug af HTML/CSS/DOM.<br>
+            Derefter har jeg oprettet en function getJoke inde i index.js, som anvender fetch til at hente vores json. <br>
+            Dernæst har jeg gennem javascript tilføjet en eventhandler på den oprettede knap inde i index.html, <br>
+            samt tilføjet den getJoke functionen, således at en joke bliver vist, når man klikker.<br><br>
+            
+            NOTE: Nederste linje inde i funktionen getJoke ses det, at data.joke bliver hentet og er navnet på selve joken(quote). <br>
+            Altså, det vil være muligt, at skrive data.id og så vil id'et komme istedet, når man klikker.
+            
+        </em>
+    </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
